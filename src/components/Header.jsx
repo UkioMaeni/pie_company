@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from './NavBar';
-import pieLogo from '../assets/pieLogoLeft.png'
+import pieLogo from '../assets/PieLogoLeft.png'
 import Image from 'next/image';
 const Header = () => {
     return (

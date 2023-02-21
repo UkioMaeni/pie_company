@@ -1,16 +1,47 @@
 .header{
-    height: 70px;
-    width: 100%;
+    width: 100vw;
     display: flex;
+   
     justify-content: space-between;
     align-items: center;
-    padding: 0 100px;
+    padding: 0 5%;
     top:0;
     color:white;
     font-family: 'Rubik', sans-serif;
-    border-bottom: 1px solid rgba(#111111,0.2);
+    
 }
 
+@media (max-width:700px){
+    .body_about{
+        width: 70%;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .navbar{
+        transform: scale(0.7);
+    }
+    .footer{
+        display: block;
+       
+
+    }
+    .footer_title{
+       flex-wrap: wrap;
+       padding-left: 0;
+    }
+    .author{
+        width: 100%;
+    }
+}
+@media (min-width:700px){
+    .body_about{
+        width: 50%;
+    }
+    .author{
+        width: 70%;
+    }
+}
 .pie-logo{
     height:120px;
     width: 120px;
@@ -21,7 +52,6 @@
 }
 .navbar{
 display: flex;
-height: 100%;
 align-items: center;
     &_item{
     padding: 0 10px;
@@ -45,10 +75,10 @@ align-items: center;
 .footer{
     border-top:1px solid #555050;
     display: flex;
+    align-items: center;
     width: 100%;
     background: #fafafa;
-    justify-content: space-between;
-    padding: 30px 25%;
+    padding: 0 25%;
     &_title{
         display: flex;
         padding-left: 15%;
@@ -56,7 +86,13 @@ align-items: center;
     }
     &_column{
         flex:1;
+        margin:10px 20px;
         
+    }
+    &_cr{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -93,10 +129,10 @@ align-items: center;
         font-weight: 300;
         color: rgba( #000000,  0.5);
         font-size: 18px;
+        text-align: center;
     }
     &_about{
         margin-top: 130px;
-        width: 50%;
         font-size: 24px;
         font-weight: 300;
     }
@@ -183,10 +219,11 @@ font-weight: 800;
 .author{
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
+   
     margin-top: 30px;
     margin-bottom: 40px;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 10px;
     &_img{
         border-radius: 10px;
         border:1px solid rgb(24, 23, 23);
@@ -196,12 +233,18 @@ font-weight: 800;
     &_item{
         display: flex;
         flex-direction: column;
-        width:max-content;
+        width:35%;
         margin:10px;
         align-items: center;
         
     }
     &_name{
+        display: flex;
+        justify-content: center;
+        display: flex;
+        width: 150px;
+        text-align: center;
+        word-wrap: normal;
         margin-top: 10px;
         font-size: 22px;
         color: rgb(175, 30, 30);

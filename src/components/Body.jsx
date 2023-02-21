@@ -10,7 +10,7 @@ const Body = () => {
             <div className='body_title'>PieCompany</div>
             <div className='body_start'>Start 19.02.2023</div>
             <div className='flex'>
-                <div className='body_about'><span className='pie-decore'>_Pie_</span> Product you've been waiting for. We implement many approaches to improve quality and create to meet your needs. Our products:</div>
+                <div className='body_about'><span className='pie-decore'>_Pie_</span> Product you have been waiting for. We implement many approaches to improve quality and create to meet your needs. Our products:</div>
                 <ul className='prodact'>
                     <li className='prodact_el'><strong className='border'>PieDiagrams npm-package:</strong> package Nodejs for dynamic-changing data for charts.</li>
                     <li className='prodact_el'><strong className='border'>Piechat:</strong> Virtual chat for real-time communication! Currently supported on platforms: Android, Web</li>

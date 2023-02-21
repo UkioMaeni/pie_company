@@ -5,7 +5,7 @@ import pieLogo from '../assets/PieLogo.png'
 const Footer = () => {
     return (
         <div className='footer'>
-            <div>
+            <div className='footer_cr'>
                 <Image src={pieLogo} className='pie-logo_footer'/>
                 <div className='body_start'>2023 © PieCompany </div>
             </div>  
