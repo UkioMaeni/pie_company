@@ -1,0 +1,222 @@
+.header{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    top:0;
+    color:white;
+    font-family: 'Rubik', sans-serif;
+    border-bottom: 1px solid rgba(#111111,0.2);
+}
+
+.pie-logo{
+    height:120px;
+    width: 120px;
+    &_footer{
+        height: 80px;
+        width: 80px;
+    }
+}
+.navbar{
+display: flex;
+height: 100%;
+align-items: center;
+    &_item{
+    padding: 0 10px;
+    margin-right: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color:#111111;
+    font-size: 20px;
+     &:hover{
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    }
+}
+
+.active{
+    background-color: rgba(0, 0, 0, 0.2); 
+}
+
+
+.footer{
+    border-top:1px solid #555050;
+    display: flex;
+    width: 100%;
+    background: #fafafa;
+    justify-content: space-between;
+    padding: 30px 25%;
+    &_title{
+        display: flex;
+        padding-left: 15%;
+        flex:1;
+    }
+    &_column{
+        flex:1;
+        
+    }
+}
+
+.nav{
+    font-size: 18px;
+    color: #111111;
+    margin-bottom: 20px;
+    &_el{
+        color: #5e5b5b;
+        font-weight: 300;
+        width: max-content;
+        font-size: 15px;
+        line-height: 30px;
+        cursor: pointer;
+        transition: color 0.1s ease;
+        &:hover{
+            color: #000000;
+        }
+    }
+}
+
+
+.body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    &_title{
+        margin-top: 40px;
+        font-size: 40px;
+    }
+    &_start{
+        font-weight: 300;
+        color: rgba( #000000,  0.5);
+        font-size: 18px;
+    }
+    &_about{
+        margin-top: 130px;
+        width: 50%;
+        font-size: 24px;
+        font-weight: 300;
+    }
+}
+
+@keyframes color_pie{
+0%{
+background: green;
+background-clip: text;
+}
+50%{
+    background: blue;
+    background-clip: text;
+}
+100%{
+    background: green;
+    background-clip: text;
+}
+
+
+}
+.pie-decore{
+    text-transform: uppercase;
+   animation: color_pie linear 10s infinite;
+   transition: background ease 10s;
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+font-weight: 800;
+}
+
+.prodact{
+    margin-bottom: 30px;
+    width: 50%;
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    & span{
+        font-size: 18px;
+        font-weight: 300;
+        border-bottom: none;
+        
+    }
+    &_el{
+        list-style-type: none;
+        margin-top: 20px;
+        font-weight: 300;
+        font-size: 18px;
+        display: block;
+        line-height: 28px;
+        
+      
+        &::before{
+            position: absolute;
+            margin-left:-15px ;
+            content: '-';
+            font-weight: 800;
+            color:#555050;
+            border-bottom: none;
+        }
+    }
+}
+.border{
+    border-bottom: 1px dotted;
+    font-size:  20px;
+    cursor:pointer;
+    &:hover{
+       color:#555050;
+
+    }
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seporator{
+    height: 1px;
+    width: 100%;
+    border-bottom:1px solid rgba(#111111,0.2);
+}
+
+.author{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    justify-content: space-around;
+    &_img{
+        border-radius: 10px;
+        border:1px solid rgb(24, 23, 23);
+        width: 80px;
+        height: 80px;
+    }
+    &_item{
+        display: flex;
+        flex-direction: column;
+        width:max-content;
+        margin:10px;
+        align-items: center;
+        
+    }
+    &_name{
+        margin-top: 10px;
+        font-size: 22px;
+        color: rgb(175, 30, 30);
+    }
+    &_work{
+        font-size: 16px;
+        color: black;
+    }
+}
+
+.dd{
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
